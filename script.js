@@ -1,8 +1,9 @@
 //your code here
-const evaluatedText = document.querySelector('#evaluatedText');
-const letterCount = document.querySelector('#letterCount');
+const textbox = document.getElementById("evaluatedText");
+const letterCount = document.getElementById("letterCount");
 
-evaluatedText.addEventListener('input', () => {
-  const count = evaluatedText.value.length;
+textbox.addEventListener("input", function() {
+  const text = textbox.value;
+  const count = text.length;
   letterCount.textContent = count;
 });
